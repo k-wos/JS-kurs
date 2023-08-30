@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //rest
+      function foo(...params) {
+        console.log(params);
+      }
+      foo(1, 2, 3, 4, 5, 6, 7);
+
+      //spread
+      function test(a, b, c, d) {
+        console.log(a, b, c, d);
+      }
+
+      const arr = [1, 2, 3, 4];
+      test(...arr);
+
+      let data = {
+        name: "John",
+        city: "krk",
+        favColor: "red",
+      };
+
+      let obj = {
+        ...data,
+        email: "john@exxample.com",
+        country: "Poland",
+        city: "wwa",
+      };
+
+      console.log(obj);
+
+      function createComputer(cpu, gpu, ram, disk) {
+        return {
+          cpu: cpu,
+          gpu: gpu,
+          ram: ram,
+          disk: disk,
+        };
+      }
+
+      let computer = createComputer("amd", "nvidia", "32gb", "1tb");
+      console.log(computer);
+
+      function createLaptop(obj) {
+        return {
+          ...obj,
+          type: "laptop",
+        };
+      }
+
+      let laptop = createLaptop(computer);
+      console.log(laptop);
+    </script>
+  </body>
+</html>
