@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function foo(num, obj) {
+        num = 12;
+        obj.data = "test!";
+      }
+
+      let a = 7;
+      let data = { data: "text" };
+      foo(a, data);
+
+      console.log("a:", a);
+      console.log("data:", data);
+
+      function mulBy3(arr) {
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] *= 3;
+        }
+      }
+
+      let tab = [1, 2, 3, 4, 5, 6, 7];
+      mulBy3(tab);
+      console.log(tab);
+    </script>
+  </body>
+</html>
