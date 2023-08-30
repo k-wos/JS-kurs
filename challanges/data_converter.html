@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function convertToSeconds(hours, minutes) {
+        let seconds = hours * 60 * 60 + minutes * 60;
+        return seconds;
+      }
+
+      function convertToHours(minutes) {
+        {
+          let hours = minutes / 60;
+          return hours;
+        }
+      }
+
+      let seconds = convertToSeconds(3, 25);
+      console.log(seconds);
+
+      let hours = convertToHours(120);
+      console.log(hours);
+    </script>
+  </body>
+</html>

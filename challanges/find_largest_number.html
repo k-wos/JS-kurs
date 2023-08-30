@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findLargest(num1, num2) {
+        if (num1 > num2) {
+          console.log("num1 > num2");
+          return num1;
+        } else if (num2 > num1) {
+          console.log("num2 > num1");
+          return num2;
+        } else {
+          console.log("num1 = num2");
+        }
+      }
+
+      findLargest(3, 10);
+      findLargest(12, 7);
+      findLargest(7, 7);
+    </script>
+  </body>
+</html>
