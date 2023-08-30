@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculateBmi(weigth, height) {
+        return weigth / (height * height);
+      }
+
+      let bmiForExampleData = calculateBmi(75, 1.75);
+
+      if (bmiForExampleData > 18.5 && bmiForExampleData < 24.9) {
+        console.log(bmiForExampleData + "prawidłowe bmi");
+      }
+    </script>
+  </body>
+</html>
