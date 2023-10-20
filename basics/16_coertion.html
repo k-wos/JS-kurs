@@ -1,0 +1,33 @@
+<script>
+    let txt = String(123);
+    console.log(typeof txt);
+
+    let num = parseInt("543543");
+    console.log(typeof num);
+
+    let data = "txt" + 123;
+    console.log(data);
+
+    let info = 10;
+
+    if (info + 2 == 12) {
+        //Nie wykona się
+    }
+
+    let d = +"100";
+    console.log(typeof d);
+
+    d = -"100";
+    console.log(typeof d);
+    console.log(d);
+
+    if ("false") console.log("Wykona 1");
+    if (" ") console.log("Wykona 2");
+    if ("") console.log("Nie wykona się");
+
+    if ("0") console.log("Wykona 3");
+    if (!"0") console.log("Nie wykona się");
+
+    if ({}) console.log("Wykona 4");
+    if ({ a: 10 } == "[object Object]") console.log("Wykona 5");
+</script>
