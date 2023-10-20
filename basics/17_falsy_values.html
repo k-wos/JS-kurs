@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //Falsy values
+            if (0) console.log("nie wykona się");
+            if (-0) console.log("nie wykona się");
+            if ("") console.log("nie wykona się");
+            if (NaN) console.log("nie wykona się");
+            if (null) console.log("nie wykona się");
+            if (undefined) console.log("nie wykona się");
+            if (false) console.log("nie wykona się");
+            if (0n) console.log("nie wykona się");
+            if (-0n) console.log("nie wykona się");
+
+            //Truthly values
+            if (1) console.log("Wykona się 1");
+            if (-1) console.log("Wykona się -1");
+            if (5345436543645) console.log("Wykona się 5345436543645");
+            if ([]) console.log("Wykona się []");
+            if ({}) console.log("Wykona się {}");
+            if (".") console.log("Wykona się .");
+            if (function test() {}) console.log("Wykona się function");
+            if (true) console.log("Wykona się true");
+        </script>
+    </body>
+</html>
